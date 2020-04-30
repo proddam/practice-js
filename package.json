@@ -1,0 +1,23 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "- 한번쯤은 한땀 한땀씩 정리해 보고 싶었는데... 더 늦기 전에 정리를 해 보자 - 자바스크립트의 모든 것을...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd algorithm && mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/proddam/practice-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/proddam/practice-js/issues"
+  },
+  "homepage": "https://github.com/proddam/practice-js#readme",
+  "devDependencies": {
+    "mocha": "^7.1.2"
+  }
+}
