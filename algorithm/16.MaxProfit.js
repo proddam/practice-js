@@ -1,5 +1,7 @@
 // 내 답안
-// 1. 뒤에서 앞으로 루프 돈다.
+// 1. 뒤에서 앞으로 루프 돈다. 그러나 O(n^2)에 가깝다
+// 2. maxProfit2는 O(n)이다.
+
 const maxProfit = (arr) => {
   let prevMaxA = -1
   let maxDiff = 0

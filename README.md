@@ -4,3 +4,5 @@
 
 ## References
 - https://medium.com/siliconwat/algorithms-in-javascript-b0bed68f4038
+
+- ![](docs/images/2020-05-01-15-55-35.png)
