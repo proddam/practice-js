@@ -92,12 +92,39 @@ const treeWidths = (root) => {
   return counters
 }
 
- describe("Width of Tree Levels", () => {
+describe("Width of Tree Levels", () => {
   it("Should return width of each tree level", () => {
-   let rt = new Node(1);
-   rt.addChild(2);
-   rt.addChild(3);
-   rt.children[1].addChild(4);
-   assert.deepEqual(treeWidths(rt), [1, 2, 1]);
+    let rt = new Node(1);
+    rt.addChild(2);
+    rt.addChild(3);
+    rt.children[1].addChild(4);
+    assert.deepEqual(treeWidths(rt), [1, 2, 1]);
+  });
+});
+
+const treeHeight = (rt) => {
+  const q = [rt, "reset"]
+  let count = 0;
+  while (q.length >= 2) {
+    let node = q.shift()
+    if (node === "reset") {
+      count++
+      q.push("reset")
+    }
+    else {
+      q.push(...node.children)
+    }
+  }
+  return count
+}
+
+describe("Height of Tree", () => {
+  it("Should return max number of levels", () => {
+   const root3 = new Node(1);
+   root3.addChild(2);
+   root3.addChild(3);
+   root3.children[1].addChild(4);
+   assert.deepEqual(treeHeight(root3), 2);
   });
  });
+
